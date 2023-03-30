@@ -1,12 +1,14 @@
-#Global #droite {
+#droite {
+  
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #C2D3D6;
+  background-image: url(https://images.vexels.com/content/282018/preview/japanese-cloud-pattern-design-fafdf2.png);
+  background-size: cover;
 }
 
-#Global #droite .commande {
+#droite .commande {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -36,13 +38,17 @@ text {
   max-width: 50%;
 }
 
+
+table {
+  min-width: 400px;
+  max-width: 67.5%;
+}
+
 .styled-table {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
-  max-width: 96%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
