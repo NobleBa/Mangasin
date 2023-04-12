@@ -33,6 +33,7 @@ table img:hover {
   transform: scale(2.5);
 }
 
+
 table input,
 text {
   max-width: 50%;
@@ -53,7 +54,7 @@ table {
 }
 
 .styled-table thead tr {
-  background-color: #009879;
+  background-color: #f25053;
   color: #ffffff;
   text-align: center;
 }
@@ -65,6 +66,7 @@ table {
 
 .styled-table tbody tr {
   border-bottom: 1px solid #dddddd;
+  background-color: #5A5A5A;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
@@ -72,10 +74,62 @@ table {
 }
 
 .styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid #f25053;
 }
 
 .styled-table tbody tr:hover {
-  background: #4B9CD3;
+  background: #eab6b6;
   transition: 0.5s;
 }
+
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn36 {
+  border-color: #fff;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn36:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.input-style {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+
+.input-style:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+
+
+

@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <a class="M" href="index.html" name="catalogue"><img src="Photos/majin.png" width="200px"></a>
+        <a class="M" href="index.html" name="catalogue"><img src="Photos/majin.png" width="100px"></a>
         <nav2>
             <a href="index.html">Accueil</a>
             <a href="sortie.html">Dernières sorties</a>
@@ -43,13 +43,13 @@
                 <h2>Catalogue</h2>
             </caption>
             <thead>
-                <tr> <!-- début de la ligne -->
+                <tr> 
                     <th>Couverture</th>
                     <th>Nom</th>
                     <th>Résumé</th>
                     <th>Prix</th>
                     <th>Commande</th>
-                </tr> <!-- fin de la ligne -->
+                </tr> 
             </thead>
             <tr>
                 <td><a name="ascension"><img src="Photos/ascension.jpg" width="100px"></a></td>
@@ -63,17 +63,20 @@
                     cieux...</td>
                 <td>7.99€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_ascension">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_ascension">20</div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins (document.getElementById('quanti_ascension'))" />
-                        <input type="text" id="quanti_ascension" value="0">
-                        <input type="button" value="+"
-                            onclick="plus (document.getElementById('stock_ascension'),document.getElementById('quanti_ascension'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_ascension'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_ascension" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_ascension'),document.getElementById('quanti_ascension'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_ascension'),document.getElementById('quanti_ascension'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_ascension'),document.getElementById('quanti_ascension'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -90,17 +93,20 @@
                     abandonner le jeu collectif et de transcender pour devenir l'attaquant ultime !</td>
                 <td>7.20€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_bluelock">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_bluelock">20</div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins(document.getElementById('quanti_bluelock'))" />
-                        <input type="text" id="quanti_bluelock" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_bluelock'),document.getElementById('quanti_bluelock'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_bluelock'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_bluelock" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_bluelock'),document.getElementById('quanti_bluelock'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_bluelock'),document.getElementById('quanti_bluelock'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_bluelock'),document.getElementById('quanti_bluelock'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -121,16 +127,20 @@
                     redevenir sa sœur humaine.</td>
                 <td>7.29€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_demon">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_demon">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_demon'))" />
-                        <input type="text" id="quanti_demon" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_demon'),document.getElementById('quanti_demon'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_demon'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_demon" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_demon'),document.getElementById('quanti_demon'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_demon'),document.getElementById('quanti_demon'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_demon'),document.getElementById('quanti_demon'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -150,17 +160,20 @@
                     Bowl.</td>
                 <td>6.99€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_eyeshield">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_eyeshield">20</div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins(document.getElementById('quanti_eyeshield'))" />
-                        <input type="text" id="quanti_eyeshield" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_eyeshield'),document.getElementById('quanti_eyeshield'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_eyeshield'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_eyeshield" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_eyeshield'),document.getElementById('quanti_eyeshield'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_eyeshield'),document.getElementById('quanti_eyeshield'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_eyeshield'),document.getElementById('quanti_eyeshield'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -175,16 +188,20 @@
                     l'entraîneur du club...</td>
                 <td>6.05€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_ippo">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_ippo">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_ippo'))" />
-                        <input type="text" id="quanti_ippo" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_ippo'),document.getElementById('quanti_ippo'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_ippo'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_ippo" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_ippo'),document.getElementById('quanti_ippo'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_ippo'),document.getElementById('quanti_ippo'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_ippo'),document.getElementById('quanti_ippo'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -206,16 +223,20 @@
                     va devoir s'initier à l'art occulte et mystérieux de l'exorcisme !</td>
                 <td>6.95€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_jujutsu">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_jujutsu">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_jujutsu'))" />
-                        <input type="text" id="quanti_jujutsu" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_jujutsu'),document.getElementById('quanti_jujutsu'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_jujutsu'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_jujutsu" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_jujutsu'),document.getElementById('quanti_jujutsu'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_jujutsu'),document.getElementById('quanti_jujutsu'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_jujutsu'),document.getElementById('quanti_jujutsu'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -229,16 +250,20 @@
                     devenir un grand général.</td>
                 <td>6.95€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_kingdom">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_kingdom">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_kingdom'))" />
-                        <input type="text" id="quanti_kingdom" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_kingdom'),document.getElementById('quanti_kingdom'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_kingdom'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_kingdom" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_kingdom'),document.getElementById('quanti_kingdom'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_kingdom'),document.getElementById('quanti_kingdom'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_kingdom'),document.getElementById('quanti_kingdom'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -250,16 +275,20 @@
                     laisse intimider et harceler quotidiennement. Mais un jour, sa vie va basculer...</td>
                 <td>8.70€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_lookism">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_lookism">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_lookism'))" />
-                        <input type="text" id="quanti_lookism" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_lookism'),document.getElementById('quanti_lookism'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_lookism'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_lookism" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_lookism'),document.getElementById('quanti_lookism'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_lookism'),document.getElementById('quanti_lookism'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_lookism'),document.getElementById('quanti_lookism'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -276,17 +305,20 @@
                     Izuku, le parcours du combattant ne fait que commencer !</td>
                 <td>6.95€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_myheroacademia">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_mha">20</div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins(document.getElementById('quanti_myheroacademia'))" />
-                        <input type="text" id="quanti_myheroacademia" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_myheroacademia'),document.getElementById('quanti_myheroacademia'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_mha'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_mha" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_mha'),document.getElementById('quanti_mha'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_myheroacademia'),document.getElementById('quanti_myheroacademia'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_mha'),document.getElementById('quanti_mha'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -305,16 +337,20 @@
                     Cependant, est-il bien sage de s'allier à un dragon ?</td>
                 <td>7.95€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_slime">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_slime">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_slime'))" />
-                        <input type="text" id="quanti_slime" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_slime'),document.getElementById('quanti_slime'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_slime'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_slime" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_slime'),document.getElementById('quanti_slime'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_slime'),document.getElementById('quanti_slime'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_slime'),document.getElementById('quanti_slime'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -337,17 +373,20 @@
                     lancée.</td>
                 <td>6.99€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_onepiece">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_onepiece">20</div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins(document.getElementById('quanti_onepiece'))" />
-                        <input type="text" id="quanti_onepiece" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_onepiece'),document.getElementById('quanti_onepiece'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_onepiece'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_onepiece" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_onepiece'),document.getElementById('quanti_onepiece'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_onepiece'),document.getElementById('quanti_onepiece'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_onepiece'),document.getElementById('quanti_onepiece'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -365,16 +404,20 @@
                     de ce coach bien décidé à repousser toutes ses limites ?</td>
                 <td>7.99€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_riduko">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_rikudo">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_riduko'))" />
-                        <input type="text" id="quanti_riduko" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_riduko'),document.getElementById('quanti_riduko'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_rikudo'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_rikudo" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_rikudo'),document.getElementById('quanti_rikudo'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_riduko'),document.getElementById('quanti_riduko'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_rikudo'),document.getElementById('quanti_rikudo'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -396,16 +439,20 @@
                     titans jusqu'à ce qu'il n'en reste plus un seul !!</td>
                 <td>7.20€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_snk">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_snk">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_snk'))" />
-                        <input type="text" id="quanti_snk" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_snk'),document.getElementById('quanti_snk'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_snk'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_snk" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_snk'),document.getElementById('quanti_snk'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_snk'),document.getElementById('quanti_snk'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_snk'),document.getElementById('quanti_snk'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -421,16 +468,20 @@
                     et aimante.</td>
                 <td>6.90€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_spy">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_spy">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_spy'))" />
-                        <input type="text" id="quanti_spy" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_spy'),document.getElementById('quanti_spy'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_spy'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_spy" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_spy'),document.getElementById('quanti_spy'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_spy'),document.getElementById('quanti_spy'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_spy'),document.getElementById('quanti_spy'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -447,16 +498,20 @@
                     important (notamment pour un sportif) : la paix intérieure.</td>
                 <td>7.20€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_suzuka">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_suzuka">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_suzuka'))" />
-                        <input type="text" id="quanti_suzuka" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_suzuka'),document.getElementById('quanti_suzuka'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_suzuka'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_suzuka" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_suzuka'),document.getElementById('quanti_suzuka'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_suzuka'),document.getElementById('quanti_suzuka'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_suzuka'),document.getElementById('quanti_suzuka'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -474,16 +529,20 @@
                     qu'il aime... ), de la bande qui le martyrise.</td>
                 <td>7.95€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_breaker">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_breaker">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_breaker'))" />
-                        <input type="text" id="quanti_breaker" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_breaker'),document.getElementById('quanti_breaker'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_breaker'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_breaker" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_breaker'),document.getElementById('quanti_breaker'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_breaker'),document.getElementById('quanti_breaker'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_breaker'),document.getElementById('quanti_breaker'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -505,16 +564,20 @@
                     enfers de Kaneki commence !!</td>
                 <td>6.99€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_ghoul">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_ghoul">20</div>
                     <div class="commande">
-                        <input type="button" value="-" onclick="moins(document.getElementById('quanti_ghoul'))" />
-                        <input type="text" id="quanti_ghoul" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_ghoul'),document.getElementById('quanti_ghoul'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_ghoul'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_ghoul" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_ghoul'),document.getElementById('quanti_ghoul'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_ghoul'),document.getElementById('quanti_ghoul'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_ghoul'),document.getElementById('quanti_ghoul'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -528,17 +591,20 @@
                     au moment où il était dans la même école qu'Hinata...</td>
                 <td>6.99€</td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_tokyorevengers">20</span></div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_tokyorevengers">20</div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins(document.getElementById('quanti_tokyorevengers'))" />
-                        <input type="text" id="quanti_tokyorevengers" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_tokyorevengers'),document.getElementById('quanti_tokyorevengers'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_tokyorevengers'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_tokyorevengers" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_tokyorevengers'),document.getElementById('quanti_tokyorevengers'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_tokyorevengers'),document.getElementById('quanti_tokyorevengers'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_tokyorevengers'),document.getElementById('quanti_tokyorevengers'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -552,19 +618,21 @@
                     un unique objectif : améliorer sa maitrise de la lame, et devenir le meilleur
                     samurai du Japon.</td>
                 <td>9.35€</td>
-                <td style="display:none"><span id="stock_vagabond">20</span></td>
                 <td>
-                    <div class="stock" style="visibility: hidden;"><span id="stock_ascension">20</div>
+                    <div class="stock" style="visibility: hidden;"><span id="stock_vagabond">20</div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins(document.getElementById('quanti_vagabond'))" />
-                        <input type="text" id="quanti_vagabond" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_vagabond'),document.getElementById('quanti_vagabond'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_vagabond'))" >
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_vagabond" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_vagabond'),document.getElementById('quanti_vagabond'))" >
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_vagabond'),document.getElementById('quanti_vagabond'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_vagabond'),document.getElementById('quanti_vagabond'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
@@ -587,20 +655,23 @@
                 <td>
                     <div class="stock" style="visibility: hidden;"><span id="stock_windbreaker">20</span></div>
                     <div class="commande">
-                        <input type="button" value="-"
-                            onclick="moins(document.getElementById('quanti_windbreaker'))" />
-                        <input type="text" id="quanti_windbreaker" value="0">
-                        <input type="button" value="+"
-                            onclick="plus(document.getElementById('stock_windbreaker'),document.getElementById('quanti_windbreaker'))" />
+                        <button class="bn3637 bn36" onclick="moins(document.getElementById('quanti_windbreaker'))">  
+                            -
+                        </button>
+                        <input placeholder="0" class="input-style" id="quanti_windbreaker" value="0">
+                        <button class="bn3637 bn36" onclick="plus(document.getElementById('stock_windbreaker'),document.getElementById('quanti_windbreaker'))">
+                            +
+                        </button>
                     </div>
                     <div class="commande">
-                        <input type="button" value="Ajouter au panier"
-                            onclick="panier (document.getElementById('stock_windbreaker'),document.getElementById('quanti_windbreaker'))" />
+                        <button class="bn3637 bn36" onclick="panier (document.getElementById('stock_windbreaker'),document.getElementById('quanti_windbreaker'))">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </td>
             </tr>
         </table>
-        <input type="button" value="Stock" onclick="AffichageStock()" />
+        <button class="bn3637 bn36" onclick="AffichageStock()">Stock</button>
         <br>
     </div>
     <footer style="white-space:pre-wrap">
