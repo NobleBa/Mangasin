@@ -19,7 +19,7 @@
     AllowOverride None
     Require all granted
     </Directory>
-   # En ramplaçant par 
+   # En remplaçant par 
     <Directory /home/cytech/www >
     Options Indexes FollowSymLinks
     AllowOverride None
