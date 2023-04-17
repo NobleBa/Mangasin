@@ -8,7 +8,7 @@
     
   # Donner les droits d'acces
     chown www-data /home/cytech/www -Rf
-    sudo chmod 775 -R /home/cytech/www
+    sudo chmod 777 -R /home/cytech/www
     
   # Editer les fichiers de configurations d'apache2
     sudo vi /etc/apache2/sites-available/000-default.conf
